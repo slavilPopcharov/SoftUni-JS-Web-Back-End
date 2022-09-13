@@ -1,0 +1,20 @@
+{
+  "name": "softuni-js-web-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "intro to node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slavilPopcharov/SoftUni-JS-Web-Back-End.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slavilPopcharov/SoftUni-JS-Web-Back-End/issues"
+  },
+  "homepage": "https://github.com/slavilPopcharov/SoftUni-JS-Web-Back-End#readme"
+}
