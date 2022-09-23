@@ -24,8 +24,9 @@ app.post("/catalog/:itemName", (req, res) => {
 
 //Redirect
 app.get ('/back-to-catalog', (req, res) => {
-res.redirect('/catalog')
+res.redirect('/catalog');
+
 });
 
-
+//download or read files inline res.download("fileName.pdf"); res.sendFile();
 app.listen(5000, () => console.log("Listening on port 5000..."));
