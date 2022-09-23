@@ -1,0 +1,13 @@
+<h1>Catalog</h1>
+
+{{#if items}}
+
+  <p>We have items:
+    {{#each items}}
+      <li>{{one}}</li>
+    {{/each}}
+  </p>
+
+{{else}}
+  <p>We dont have items</p>
+{{/if}}
