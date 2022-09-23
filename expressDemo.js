@@ -22,4 +22,10 @@ app.post("/catalog/:itemName", (req, res) => {
   res.send(`New item was added to the catalog: ${item}`);
 });
 
+//Redirect
+app.get ('/back-to-catalog', (req, res) => {
+res.redirect('/catalog')
+});
+
+
 app.listen(5000, () => console.log("Listening on port 5000..."));
