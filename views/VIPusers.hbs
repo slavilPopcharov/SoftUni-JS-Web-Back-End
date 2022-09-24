@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      {{#each VIP}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{firstName}}</td>
+      <td>{{secondName}}</td>
+      <td>{{age}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
