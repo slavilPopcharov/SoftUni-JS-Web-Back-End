@@ -4,7 +4,7 @@ const movieSchema = new mongoose.Schema({
   name: String,
   description: String,
   imageUrl: String,
-  year: Number,
+  year: String,
   // Can have validations, required etc...
 });
 
