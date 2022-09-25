@@ -4,7 +4,7 @@
   "description": "",
   "main": "intro to node.js",
   "scripts": {
-    "start": "nodemon mongodb-demo.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +21,7 @@
   "dependencies": {
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
-    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.1",
     "nodemon": "^2.0.20"
   }
 }
