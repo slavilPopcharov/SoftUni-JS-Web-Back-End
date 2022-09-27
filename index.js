@@ -4,9 +4,17 @@ const app = express();
 app.engine('hbs', hbs.engine({ extname: 'hbs' }));
 app.set('view engine', 'hbs');
 
-app.get ('/session', (req, res) => {
-res.send(req.session);
+//JWT
+const jwt = require('jsonwebtoken');
+const payload = { username: "Peter" };
+const options = { expiresIn: "2d" };
+const sectret = "My personal signature"
+const userJWT = jwt.sign(payload, sectret, options)
+
+app.get ('/', (req, res) => {
+res.send(userJWT);
 });
+
 
 //Bcrypt setup
 const bcrypt = require("bcrypt");
