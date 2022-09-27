@@ -4,19 +4,6 @@ const app = express();
 app.engine('hbs', hbs.engine({ extname: 'hbs' }));
 app.set('view engine', 'hbs');
 
-//Express-Session Setup
-const expressSession = require("express-session");
-app.use(expressSession({
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false }
-}));
-app.get ('/', (req, res) => {
-  req.session.username = "hello"
-res.send('Home page');
-});
-
 app.get ('/session', (req, res) => {
 res.send(req.session);
 });
